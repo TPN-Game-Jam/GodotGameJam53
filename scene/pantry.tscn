@@ -1,0 +1,93 @@
+[gd_scene load_steps=17 format=3 uid="uid://dne8vsto7eouf"]
+
+[ext_resource type="PackedScene" uid="uid://c0upekkk1aadd" path="res://scene/topping.tscn" id="1_lu82k"]
+[ext_resource type="Texture2D" uid="uid://bq2nf70tsni11" path="res://asset/image/bun_001.png" id="2_kmou2"]
+[ext_resource type="Texture2D" uid="uid://be3fj8lu4ctqw" path="res://asset/image/bun_bottom_open.png" id="3_lh04s"]
+[ext_resource type="Texture2D" uid="uid://di878imx47nml" path="res://asset/image/burger_001.png" id="4_jhiww"]
+[ext_resource type="Texture2D" uid="uid://dhav3a4twwmyu" path="res://asset/image/cheese_001.png" id="5_qma6h"]
+[ext_resource type="Texture2D" uid="uid://3ymommm8efgx" path="res://asset/image/lettuce_001.png" id="6_i26p4"]
+[ext_resource type="AudioStream" uid="uid://6c44iv07v7ql" path="res://asset/sounds/lettuceplaced.wav" id="7_ijwps"]
+[ext_resource type="Texture2D" uid="uid://dakd2budgpquc" path="res://asset/image/tomato_001.png" id="7_klnyc"]
+[ext_resource type="AudioStream" uid="uid://e38lh62h7ngt" path="res://asset/sounds/lettucevoice.wav" id="8_87axs"]
+[ext_resource type="Texture2D" uid="uid://cj2na8uh8rel6" path="res://asset/image/mayo_001.png" id="8_aaorf"]
+[ext_resource type="Texture2D" uid="uid://c82lybp6ucsp" path="res://asset/image/pickel_001.png" id="8_otxmi"]
+[ext_resource type="Texture2D" uid="uid://n54jh84exnho" path="res://asset/image/may_onbun_001.png" id="9_k44gc"]
+[ext_resource type="Texture2D" uid="uid://cabhp7ny53lwm" path="res://asset/image/ketchup_001.png" id="10_n3b51"]
+[ext_resource type="Texture2D" uid="uid://cdm8y1uij333g" path="res://asset/image/ketchup_onbun_001.png" id="11_7jjxy"]
+[ext_resource type="Texture2D" uid="uid://bmsrfvcmvws5c" path="res://asset/image/mustard_001.png" id="12_wtkd8"]
+[ext_resource type="Texture2D" uid="uid://da64s5x12g5qw" path="res://asset/image/mustard_onbun.png" id="13_okxsq"]
+
+[node name="pantry" type="Node2D"]
+
+[node name="bun" parent="." instance=ExtResource("1_lu82k")]
+topping = "Bun"
+toppingEnum = 0
+toppingState = 0
+image_on_burger = ExtResource("3_lh04s")
+image_on_pantry = ExtResource("2_kmou2")
+
+[node name="burger_patty" parent="." instance=ExtResource("1_lu82k")]
+position = Vector2(64, 0)
+topping = "Burger"
+toppingEnum = 1
+toppingState = 0
+image_on_burger = ExtResource("4_jhiww")
+image_on_pantry = ExtResource("4_jhiww")
+
+[node name="cheese" parent="." instance=ExtResource("1_lu82k")]
+position = Vector2(128, 0)
+topping = "Cheese"
+toppingEnum = 2
+toppingState = 0
+image_on_burger = ExtResource("5_qma6h")
+image_on_pantry = ExtResource("5_qma6h")
+
+[node name="lettuce" parent="." instance=ExtResource("1_lu82k")]
+position = Vector2(192, 0)
+topping = "Lettuce"
+toppingEnum = 4
+toppingState = 0
+image_on_burger = ExtResource("6_i26p4")
+image_on_pantry = ExtResource("6_i26p4")
+placedSound = ExtResource("7_ijwps")
+selectedSound = ExtResource("8_87axs")
+
+[node name="tomato" parent="." instance=ExtResource("1_lu82k")]
+position = Vector2(256, 0)
+topping = "Tomato"
+toppingEnum = 8
+toppingState = 0
+image_on_burger = ExtResource("7_klnyc")
+image_on_pantry = ExtResource("7_klnyc")
+
+[node name="pickle" parent="." instance=ExtResource("1_lu82k")]
+position = Vector2(320, 0)
+topping = "Pickle"
+toppingEnum = 7
+toppingState = 0
+image_on_burger = ExtResource("8_otxmi")
+image_on_pantry = ExtResource("8_otxmi")
+
+[node name="mayo" parent="." instance=ExtResource("1_lu82k")]
+position = Vector2(384, 0)
+topping = "Mayo"
+toppingEnum = 5
+toppingState = 0
+image_on_burger = ExtResource("9_k44gc")
+image_on_pantry = ExtResource("8_aaorf")
+
+[node name="ketchup" parent="." instance=ExtResource("1_lu82k")]
+position = Vector2(448, 0)
+topping = "Ketchup"
+toppingEnum = 3
+toppingState = 0
+image_on_burger = ExtResource("11_7jjxy")
+image_on_pantry = ExtResource("10_n3b51")
+
+[node name="mustard" parent="." instance=ExtResource("1_lu82k")]
+position = Vector2(512, 0)
+topping = "Mustard"
+toppingEnum = 6
+toppingState = 0
+image_on_burger = ExtResource("13_okxsq")
+image_on_pantry = ExtResource("12_wtkd8")

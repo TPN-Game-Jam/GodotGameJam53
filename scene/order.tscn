@@ -1,0 +1,49 @@
+[gd_scene load_steps=5 format=3 uid="uid://bs3d5pgv2srl"]
+
+[ext_resource type="Script" path="res://scene/order.gd" id="1_0ohxu"]
+[ext_resource type="PackedScene" uid="uid://bwnphjtd7n2cc" path="res://scene/burger.tscn" id="2_oqe11"]
+[ext_resource type="AudioStream" uid="uid://b5jguf3nmt6h6" path="res://asset/sounds/wrong_topping.wav" id="3_ytg3y"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nbhkv"]
+size = Vector2(63, 126)
+
+[node name="order" type="Node2D"]
+script = ExtResource("1_0ohxu")
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="ItemList" type="ItemList" parent="."]
+offset_top = 22.0
+offset_right = 86.0
+offset_bottom = 89.0
+theme_override_font_sizes/font_size = 10
+auto_height = true
+item_count = 1
+item_0/text = ""
+item_0/selectable = false
+
+[node name="burger" parent="." instance=ExtResource("2_oqe11")]
+z_index = -1
+position = Vector2(49, 305)
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+z_as_relative = false
+position = Vector2(50.5, 306)
+shape = SubResource("RectangleShape2D_nbhkv")
+
+[node name="Reset" type="Button" parent="."]
+offset_left = 23.0
+offset_top = 204.0
+offset_right = 74.0
+offset_bottom = 235.0
+text = "Reset"
+
+[node name="WrongOrder" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_ytg3y")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="pressed" from="Reset" to="." method="_on_reset_pressed"]

@@ -1,0 +1,273 @@
+[gd_scene load_steps=8 format=3 uid="uid://bpuqsvnqrv0qa"]
+
+[ext_resource type="Script" path="res://scene/main.gd" id="1_e4631"]
+[ext_resource type="PackedScene" uid="uid://bs3d5pgv2srl" path="res://scene/order.tscn" id="1_m3otm"]
+[ext_resource type="PackedScene" uid="uid://dne8vsto7eouf" path="res://scene/pantry.tscn" id="2_71nrj"]
+[ext_resource type="AudioStream" uid="uid://dcq7p2i38a1o5" path="res://asset/sounds/order_complete.wav" id="4_uj3ri"]
+[ext_resource type="AudioStream" uid="uid://b23bb1i0otmuh" path="res://asset/sounds/thatsdope.wav" id="5_gho18"]
+[ext_resource type="Texture2D" uid="uid://dq1n3g16d6pb3" path="res://asset/image/mainmenu.png" id="6_63h0m"]
+[ext_resource type="Texture2D" uid="uid://wnf4dw3r4cf2" path="res://asset/image/conveyor_001.png" id="7_ilvko"]
+
+[node name="main" type="Node2D"]
+script = ExtResource("1_e4631")
+order_scene = ExtResource("1_m3otm")
+
+[node name="Background" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(475, 249)
+scale = Vector2(0.499738, 0.471469)
+texture = ExtResource("6_63h0m")
+
+[node name="pantry" parent="." instance=ExtResource("2_71nrj")]
+position = Vector2(240, 428)
+
+[node name="Conveyor" type="Node2D" parent="."]
+z_index = -1
+position = Vector2(-599, 6)
+
+[node name="Sprite2D9" type="Sprite2D" parent="Conveyor"]
+texture_filter = 1
+position = Vector2(1139, 321)
+texture = ExtResource("7_ilvko")
+
+[node name="Sprite2D" type="Sprite2D" parent="Conveyor"]
+texture_filter = 1
+position = Vector2(627, 321)
+texture = ExtResource("7_ilvko")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Conveyor"]
+texture_filter = 1
+position = Vector2(691, 321)
+texture = ExtResource("7_ilvko")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Conveyor"]
+texture_filter = 1
+position = Vector2(755, 321)
+texture = ExtResource("7_ilvko")
+
+[node name="Sprite2D4" type="Sprite2D" parent="Conveyor"]
+texture_filter = 1
+position = Vector2(819, 321)
+texture = ExtResource("7_ilvko")
+
+[node name="Sprite2D5" type="Sprite2D" parent="Conveyor"]
+texture_filter = 1
+position = Vector2(883, 321)
+texture = ExtResource("7_ilvko")
+
+[node name="Sprite2D6" type="Sprite2D" parent="Conveyor"]
+texture_filter = 1
+position = Vector2(947, 321)
+texture = ExtResource("7_ilvko")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Conveyor"]
+texture_filter = 1
+position = Vector2(1011, 321)
+texture = ExtResource("7_ilvko")
+
+[node name="Sprite2D8" type="Sprite2D" parent="Conveyor"]
+texture_filter = 1
+position = Vector2(1075, 321)
+texture = ExtResource("7_ilvko")
+
+[node name="Sprite2D10" type="Sprite2D" parent="Conveyor"]
+texture_filter = 1
+position = Vector2(1331, 321)
+texture = ExtResource("7_ilvko")
+
+[node name="Sprite2D11" type="Sprite2D" parent="Conveyor"]
+texture_filter = 1
+position = Vector2(1395, 321)
+texture = ExtResource("7_ilvko")
+
+[node name="Sprite2D12" type="Sprite2D" parent="Conveyor"]
+texture_filter = 1
+position = Vector2(1459, 321)
+texture = ExtResource("7_ilvko")
+
+[node name="Sprite2D13" type="Sprite2D" parent="Conveyor"]
+texture_filter = 1
+position = Vector2(1523, 321)
+texture = ExtResource("7_ilvko")
+
+[node name="Sprite2D14" type="Sprite2D" parent="Conveyor"]
+texture_filter = 1
+position = Vector2(1587, 321)
+texture = ExtResource("7_ilvko")
+
+[node name="Sprite2D15" type="Sprite2D" parent="Conveyor"]
+texture_filter = 1
+position = Vector2(1203, 321)
+texture = ExtResource("7_ilvko")
+
+[node name="Sprite2D17" type="Sprite2D" parent="Conveyor"]
+texture_filter = 1
+position = Vector2(2162, 321)
+texture = ExtResource("7_ilvko")
+
+[node name="Sprite2D18" type="Sprite2D" parent="Conveyor"]
+texture_filter = 1
+position = Vector2(1650, 321)
+texture = ExtResource("7_ilvko")
+
+[node name="Sprite2D19" type="Sprite2D" parent="Conveyor"]
+texture_filter = 1
+position = Vector2(1714, 321)
+texture = ExtResource("7_ilvko")
+
+[node name="Sprite2D20" type="Sprite2D" parent="Conveyor"]
+texture_filter = 1
+position = Vector2(1778, 321)
+texture = ExtResource("7_ilvko")
+
+[node name="Sprite2D21" type="Sprite2D" parent="Conveyor"]
+texture_filter = 1
+position = Vector2(1842, 321)
+texture = ExtResource("7_ilvko")
+
+[node name="Sprite2D22" type="Sprite2D" parent="Conveyor"]
+texture_filter = 1
+position = Vector2(1906, 321)
+texture = ExtResource("7_ilvko")
+
+[node name="Sprite2D23" type="Sprite2D" parent="Conveyor"]
+texture_filter = 1
+position = Vector2(1970, 321)
+texture = ExtResource("7_ilvko")
+
+[node name="Sprite2D24" type="Sprite2D" parent="Conveyor"]
+texture_filter = 1
+position = Vector2(2034, 321)
+texture = ExtResource("7_ilvko")
+
+[node name="Sprite2D25" type="Sprite2D" parent="Conveyor"]
+texture_filter = 1
+position = Vector2(2098, 321)
+texture = ExtResource("7_ilvko")
+
+[node name="Sprite2D26" type="Sprite2D" parent="Conveyor"]
+texture_filter = 1
+position = Vector2(2354, 321)
+texture = ExtResource("7_ilvko")
+
+[node name="Sprite2D27" type="Sprite2D" parent="Conveyor"]
+texture_filter = 1
+position = Vector2(2418, 321)
+texture = ExtResource("7_ilvko")
+
+[node name="Sprite2D28" type="Sprite2D" parent="Conveyor"]
+texture_filter = 1
+position = Vector2(2482, 321)
+texture = ExtResource("7_ilvko")
+
+[node name="Sprite2D29" type="Sprite2D" parent="Conveyor"]
+texture_filter = 1
+position = Vector2(2546, 321)
+texture = ExtResource("7_ilvko")
+
+[node name="Sprite2D30" type="Sprite2D" parent="Conveyor"]
+texture_filter = 1
+position = Vector2(2610, 321)
+texture = ExtResource("7_ilvko")
+
+[node name="Sprite2D31" type="Sprite2D" parent="Conveyor"]
+texture_filter = 1
+position = Vector2(2226, 321)
+texture = ExtResource("7_ilvko")
+
+[node name="Sprite2D32" type="Sprite2D" parent="Conveyor"]
+texture_filter = 1
+position = Vector2(2290, 321)
+texture = ExtResource("7_ilvko")
+
+[node name="Sprite2D16" type="Sprite2D" parent="Conveyor"]
+texture_filter = 1
+position = Vector2(1267, 321)
+texture = ExtResource("7_ilvko")
+
+[node name="IncomingOrderTimer" type="Timer" parent="."]
+wait_time = 5.0
+autostart = true
+
+[node name="Label" type="Label" parent="."]
+offset_left = 16.0
+offset_top = 433.0
+offset_right = 56.0
+offset_bottom = 456.0
+
+[node name="OrdersFailed" type="Label" parent="."]
+offset_left = 16.0
+offset_top = 459.0
+offset_right = 56.0
+offset_bottom = 482.0
+
+[node name="Help" type="Label" parent="."]
+offset_left = 12.0
+offset_top = 16.0
+offset_right = 233.0
+offset_bottom = 42.0
+text = "Esc to go back to main menu"
+
+[node name="Level1Button" type="Button" parent="."]
+offset_left = 388.0
+offset_top = 238.0
+offset_right = 524.0
+offset_bottom = 269.0
+text = "Well done (easy)"
+icon_alignment = 1
+
+[node name="Level2Button" type="Button" parent="."]
+offset_left = 376.0
+offset_top = 276.0
+offset_right = 534.0
+offset_bottom = 307.0
+text = "Medium (medium?)"
+icon_alignment = 1
+
+[node name="Level3Button" type="Button" parent="."]
+offset_left = 389.0
+offset_top = 314.0
+offset_right = 525.0
+offset_bottom = 345.0
+text = "Rare (hard!)
+"
+icon_alignment = 1
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 5.0
+offset_top = 234.0
+offset_right = 185.0
+offset_bottom = 439.0
+color = Color(0, 0, 0, 1)
+
+[node name="AboutText" type="RichTextLabel" parent="."]
+offset_left = 8.0
+offset_top = 234.0
+offset_right = 190.0
+offset_bottom = 449.0
+theme_override_colors/default_color = Color(0.92549, 0.266667, 0, 1)
+text = "Inspired by Space Quest 4, though not nearly as glorious as the original minigame.
+
+Can you complete 25 orders on each level without missing 5? We sure couldn't!"
+
+[node name="MonolithBurger" type="AudioStreamPlayer2D" parent="."]
+
+[node name="LevelMusic" type="AudioStreamPlayer2D" parent="."]
+
+[node name="GetReady" type="Label" parent="."]
+offset_left = 482.0
+offset_top = 264.0
+offset_right = 522.0
+offset_bottom = 287.0
+text = "Get ready!"
+
+[node name="OrderComplete" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_uj3ri")
+
+[node name="Winner" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_gho18")
+
+[connection signal="timeout" from="IncomingOrderTimer" to="." method="_on_incoming_order_timer_timeout"]
+[connection signal="button_down" from="Level1Button" to="." method="_on_level_1_button_button_down"]
+[connection signal="button_down" from="Level2Button" to="." method="_on_level_2_button_button_down"]
+[connection signal="button_down" from="Level3Button" to="." method="_on_level_3_button_button_down"]
